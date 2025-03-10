@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
+import logo from '../assets/logo.webp';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -38,7 +39,7 @@ const Header = () => {
         </ul>
       </nav>
       <div id="logo">
-        <img src="src/assets/logo.webp" alt="video editing icon" />
+        <img src={logo} alt="video editing icon" />
         <h1 id="logo-title">
           <span id = "name">ADELINO</span>
           <span id = "profession">Editor de Vídeos</span>
