@@ -1,0 +1,77 @@
+.video-carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #0F0F0F;
+  padding: 20px 20px 20px 20px; /* Adicionando padding igual em todos os lados */
+  margin: 20px 0;
+}
+
+.video-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 30px;
+  scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
+}
+
+.video-carousel::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem no Chrome/Safari */
+}
+
+.video-slide {
+  flex: 0 0 300px;
+  height: auto; /* Ajuste para que a altura do slide seja dinâmica */
+}
+
+.video-iframe {
+  border: none;
+  display: block; /* Garante que o iframe não tenha margens extras */
+}
+
+.video-iframe-instagram {
+  width: 100%;
+  height: 580px; /* Ajuste o tamanho para o Instagram */
+  overflow: hidden; /* Garantir que o conteúdo não tenha rolagem interna */
+  border: 10px solid #ffffff;
+  border-radius: 20px;
+}
+
+.video-iframe-youtube {
+  width: 456.79px;
+  height: 256.94px; /* Tamanho recomendado para vídeos do YouTube */
+  border: 5px solid #0F0F0F;
+  border-radius: 20px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+  visibility: visible; /* Garante que a seta direita esteja visível */
+}
+
+.project-description {
+  text-align: justify;
+  text-indent: 50px;
+  margin: 20px 0;
+}

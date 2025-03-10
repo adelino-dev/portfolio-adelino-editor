@@ -1,0 +1,119 @@
+/* Estilo do header */
+/* Animação fade-in */
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /* Inicialmente invisível */
+    }
+    100% {
+      opacity: 1; /* Tornando visível */
+    }
+  }
+
+header {
+    height: 85vh;
+    width: 98vw;
+    margin-top: 45px;
+    background-image: url("../assets/capa.webp");
+    background-size: cover;
+    background-position: center; /* Inicialmente centralizada */
+    background-attachment: fixed;  /* Mantém a imagem fixa durante a rolagem */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    overflow: hidden;  /* Impede que o conteúdo da imagem transborde */
+    animation: fadeIn 0.8s ease-out;
+}
+
+
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 5vw;
+    animation: fadeIn 2.5s ease-out; /* A animação dura 2s e tem uma transição suave */
+
+}
+#logo img{
+    width: 110px;
+    height: 110px;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0px;
+}
+
+#name{
+    font-size: 70px;
+    height: 70px;
+    vertical-align: top;
+    line-height: 1; /* Ajuste o line-height para o valor desejado */
+}
+
+#profession{
+    font-weight: 100;
+    font-size: 25px;
+    letter-spacing: 6px;
+    vertical-align: top;
+    line-height: 1;
+}
+
+
+/* Barra de navegação fixa com transparência */
+nav {
+    position: fixed;  /* Fixa o menu no topo */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ocupa toda a largura da página */
+    background-color: rgba(255, 255, 255, 0.8);  /* Fundo branco com 80% de opacidade */
+    padding: 10px 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    z-index: 1000;  /* Garante que fique acima do conteúdo */
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.5s ease, color 0.5s ease;  /* Transição suave para fundo e cor do texto */
+}
+
+/* Estilo dos itens do menu */
+nav ul {
+    display: flex;
+    list-style-type: none;  /* Remove os pontos das listas */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;  /* Espaçamento entre os itens */
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;  /* Cor do texto preta */
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;  /* Transição suave para a cor do texto */
+}
+
+/* Efeito de hover */
+nav li a:hover {
+    color: #530b53;  /* Cor roxa ao passar o mouse */
+}
+
+/* Barra de navegação com fundo preto e texto branco quando rolar para baixo */
+nav.scrolled {
+    background-color: #27225af6;  /* Fundo preto com 80% de opacidade */
+    color: white;
+}
+
+nav.scrolled li a {
+    color: white;  /* Texto branco */
+}

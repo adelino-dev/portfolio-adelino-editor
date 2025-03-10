@@ -1,0 +1,37 @@
+#contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    padding: 200px 0px;
+
+}
+
+#Contacts h2{
+    margin: 0;
+    font-size: 5rem;
+}
+
+#contacts span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 15px;
+    background-color: #242424;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#contacts span p{
+    margin:0;
+    font-size: 1.1rem;
+}
+
+#contacts img{
+    width: 30px;
+    height: 30px;
+}

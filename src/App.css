@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {  
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0; /* Certifique-se de remover qualquer padding padrão */
+  overflow-x: hidden; /* Garante que não haja overflow horizontal em todo o corpo */
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Garante que o container principal não tenha overflow horizontal */
+#projects {
+  overflow-x: hidden;
+  width: 100%;
+  padding: 0; /* Remova qualquer padding que possa causar overflow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:85vw;
+}
+
+/* Evitar qualquer overflow no container de vídeos */
+.video-carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Impede o transbordamento */
+  display: flex;
+  align-items: center;
+  background-color: #0F0F0F;
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 100%; /* Garante que o container não ultrapasse a tela */
+}
+
+/* Slide do vídeo */
+.video-slide {
+  flex: 0 0 300px;
+  height: auto;
+  max-width: 100%; /* Impede o transbordamento do slide */
+}
+
+/* Video iframe */
+.video-iframe {
+  border: none;
+  display: block;
+  max-width: 100%; /* Impede transbordamento */
+}
+
